@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(29, 28, 28);
+  font-family: "Cairo", sans-serif;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 2rem;
+}
+
+h1 {
+  border-bottom: 3px solid rgb(214, 206, 206);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  border-radius: 2rem;
+}
+
+form input {
+  padding-left: 1.5rem;
+}
+
+form button {
+  color: #000000;
+  background: #9b4040;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+  border-radius: 1rem;
+}
+form button:hover {
+  background: #ff6f47;
+  color: white;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-container > .todo-list {
+  min-width: 47%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  border-radius: 1rem;
+}
+.filter-todo {
+  padding: 1rem;
+}
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn,
+.edit-btn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.trash-btn {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.complete-btn {
+  background: rgb(11, 212, 162);
+}
+.edit-btn {
+  background: #333edd;
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.fall {
+  opacity: 0 !important;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
